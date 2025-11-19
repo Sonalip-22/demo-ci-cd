@@ -2,7 +2,6 @@ pipeline {
     agent any
 
     environment {
-        // Use Ubuntu's Java location
         JAVA_HOME = '/usr/lib/jvm/java-17-openjdk-amd64'
         PATH = "${JAVA_HOME}/bin:${env.PATH}"
     }
@@ -10,7 +9,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git 'https://github.com/Sonalip-22/demo-ci-cd.git'
+                git branch: 'main', url: 'https://github.com/Sonalip-22/demo-ci-cd.git'
             }
         }
 
