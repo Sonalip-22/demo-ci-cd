@@ -9,7 +9,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git 'https://github.com/Miraaqib786/my-maven-project.git'  // Change to your repo
+                git 'https://github.com/Sonalip-22/demo-ci-cd.git'  // Change to your repo
             }
         }
 
